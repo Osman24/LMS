@@ -16,7 +16,7 @@ object Main {
 
     println("Program started")
     val wholeT0 = System.currentTimeMillis
-    val schema = Vector[String]("String", "String")
+    val schema = Array[Int](0,1)
     val snippet = new  DslDriverC[String,Unit] with ScannerLowerExp with CSVProcessor{q =>
       override val codegen = new DslGenC with CGenScannerLower {
         val IR: q.type = q

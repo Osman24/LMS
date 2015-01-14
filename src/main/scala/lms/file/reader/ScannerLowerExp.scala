@@ -16,7 +16,12 @@ trait ScannerLowerExp extends ScannerLowerBase with UncheckedOpsExp {
   def copyCharArray(data: Rep[Array[Char]], pos: Rep[Int], len: Rep[Int]) = unchecked[Array[Char]]("copyBuffer(",data,"+",pos, ",", len, ")")
   def printBufWithLen(buf: Rep[Array[Char]], pos: Rep[Int], len: Rep[Int]) = unchecked[Int]("printf(\"%.*s\",",len,",",pos,"+",buf,")")
   def printString(buf: Rep[String], len: Rep[Int]) = unchecked[Int]("printf(\"%.*s\",",len,",",buf,")")
+  def printInt(value: Rep[Int]) = unchecked[Int]("printf(\"%d\\n\",", value, ")")
   def prints(s: Rep[String]): Rep[Int] = unchecked[Int]("printll(",s,")")
+  def compileRegex(s: Rep[String]): Rep[Int] = unchecked[Int]("regcomp(&regex,\"", s ,"\", 0)")
+  def runRegex(s: Rep[String]):Rep[Int] = unchecked[Int]("regexec(&regex, \"", s ,"\", 0, NULL, 0)")
+  def breakLoop():Rep[Unit] = unchecked[Unit]("break")
+  def continueLoop():Rep[Unit] = unchecked[Unit]("continue")
  // def splitString(s: Rep[String])= unchecked[Array[String]]("str")
 
 }

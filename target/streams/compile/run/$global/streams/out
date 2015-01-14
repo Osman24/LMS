@@ -10,29 +10,7 @@
 [0m[[0mdebug[0m] [0m	C:\Users\OsmanSelçuk\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.10.3.jar[0m
 [0m[[0mdebug[0m] [0m	C:\Users\OsmanSelçuk\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.10.3.jar[0m
 [0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
-[0m[[31merror[0m] [0m(run-main-0) java.lang.RuntimeException: Nonzero exit code: -1073741510[0m
-java.lang.RuntimeException: Nonzero exit code: -1073741510
-	at scala.sys.process.BasicIO$Streamed$.scala$sys$process$BasicIO$Streamed$$next$1(BasicIO.scala:48)
-	at scala.sys.process.BasicIO$Streamed$$anonfun$apply$3.apply(BasicIO.scala:51)
-	at scala.sys.process.BasicIO$Streamed$$anonfun$apply$3.apply(BasicIO.scala:51)
-	at scala.sys.process.ProcessBuilderImpl$AbstractBuilder.lines(ProcessBuilderImpl.scala:143)
-	at scala.sys.process.ProcessBuilderImpl$AbstractBuilder.lines(ProcessBuilderImpl.scala:106)
-	at tr.lms.dsl.DslDriverC.eval(DslDriverC.scala:28)
-	at tr.lms.Main$.main(Main.scala:32)
-	at tr.lms.Main.main(Main.scala)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at sbt.Run.invokeMain(Run.scala:67)
-	at sbt.Run.run0(Run.scala:61)
-	at sbt.Run.sbt$Run$$execute$1(Run.scala:51)
-	at sbt.Run$$anonfun$run$1.apply$mcV$sp(Run.scala:55)
-	at sbt.Run$$anonfun$run$1.apply(Run.scala:55)
-	at sbt.Run$$anonfun$run$1.apply(Run.scala:55)
-	at sbt.Logger$$anon$4.apply(Logger.scala:85)
-	at sbt.TrapExit$App.run(TrapExit.scala:248)
-	at java.lang.Thread.run(Thread.java:745)
 [0m[[0mdebug[0m] [0m	Thread run-main-0 exited.[0m
 [0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
 [0m[[0mdebug[0m] [0mSandboxed run complete..[0m
+[0m[[0mdebug[0m] [0mExited with code 0[0m

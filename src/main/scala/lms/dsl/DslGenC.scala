@@ -25,6 +25,7 @@ with CGenUtilOps {
   override def remap[A](m: Manifest[A]): String = m.toString match {
     case "java.lang.String" => "char*"
     case "Array[Char]" => "char*"
+    case "Array[Int]"  => "int*"
     case "Char" => "char"
     case _ => super.remap(m)
   }
